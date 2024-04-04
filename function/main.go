@@ -36,6 +36,14 @@ func main() {
 
 	var num myInt = 10
 	fmt.Printf("Type of num: %T\n", num)
+
+	// anonymous function
+	sumAnonymous := func(num1 int, num2 int) int {
+		return num1 + num2
+	}
+
+	ans := sumAnonymous(10, 20)
+	fmt.Println(ans)
 }
 
 func sum(n1 int, n2 int) int {
